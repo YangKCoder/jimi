@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li data-t="HTML">HTML</li>
+        <li data-t="CSS">CSS</li>
+        <li data-t="JavaScript">JavaScript</li>
+        <li data-t="jquery">jquery</li>
+        <li data-t="HTML5">HTML5</li>
+        <li data-t="CSS3">CSS3</li>
+        <li data-t="ES6">ES6</li>
+    </ul>
+    <script type="text/javascript">
+        //补充代码
+        let list=document.getElementsByTagName("li");
+        for(let i=0;i<list.length;i++){
+            list[i].addEventListener('mouseover', 
+                function()
+                {
+                    list[i].style.color="red";
+                    list[i].style.fontSize="20px";
+                    list[i].innerText=list[i].getAttribute("data-t")+"是第"+i+"个";
+                },
+                false
+            );
+            list[i].addEventListener('mouseleave', 
+                function()
+                {
+                    list[i].style.color="black";
+                    list[i].style.fontSize="15px";
+                    list[i].innerText=list[i].getAttribute("data-t");
+                },
+                false
+            );
+        }
+
+    </script>
+</body>
+</html>

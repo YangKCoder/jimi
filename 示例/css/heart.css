@@ -1,0 +1,33 @@
+.heart {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.heart1 {
+    width: 88px;
+    height: 81px;
+    background-image: url(../images/xin.png);
+    position: relative;
+}
+
+.heart2 {
+    width: 88px;
+    height: 81px;
+    background-image: url(../images/xin.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: pu 1s linear 0s infinite;
+}
+
+@keyframes pu {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(2);
+    }
+}

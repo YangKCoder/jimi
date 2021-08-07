@@ -1,0 +1,28 @@
+.duck {
+    width: 200px;
+    height: 160px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.duck img {
+    width: 200px;
+    height: 160px;
+}
+
+.duck p {
+    width: 190px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    position: absolute;
+    top: 160px;
+    transition: top 0.1s linear 0s;
+}
+
+.duck:hover p {
+    top: 130px;
+}

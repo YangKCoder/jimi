@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .hai {
+            width: 1000px;
+            height: 600px;
+            margin: 40px auto;
+        }
+
+        .footer {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #333;
+        }
+
+        header .logo {
+            width: 220px;
+            height: 100px;
+            float: left;
+            background-color: orange;
+        }
+
+        header .login {
+            width: 220px;
+            height: 30px;
+            float: right;
+            background-color: orange;
+        }
+
+        nav {
+            width: 660px;
+            height: 50px;
+            float: right;
+            margin-top: 20px;
+            background-color: green;
+
+        }
+
+        .hai .ad {
+            width: 300px;
+            height: 600px;
+            background-color: rgb(51, 51, 224);
+            float: left;
+        }
+
+        .hai main {
+            width: 680px;
+            height: 600px;
+            float: right;
+        }
+        .hai main .banner{
+            width: 680px;
+            height: 450px;
+            background-color:orange;
+        }
+        .hai main .pics{
+            width: 680px;
+            height: 130px;
+            margin-top: 20px;
+        }
+        .hai main .pics ul{
+            list-style: none;
+        }
+        .hai main .pics ul li{
+            float: left;
+            width: 160px;
+            height: 130px;
+            background-color:blue;
+            margin-right: 10px;
+        }
+        .hai main .pics ul li:last-child{
+            width: 170px;
+            margin-right:0;                                                                    
+            }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="login"></div>
+        <nav></nav>
+    </header>
+    <section class="hai">
+        <aside class="ad"></aside>
+        <main>
+            <div class="banner"></div>
+            <div class="pics">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </main>
+    </section>
+    <footer class="footer"></footer>
+</body>
+
+</html>
